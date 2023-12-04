@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebSocket Test Tool</title>
+  </head>
+  <body>
+    <h2>WebSocket Test Tool</h2>
+    <input type="text" id="ws-url" placeholder="Enter WebSocket URL" />
+    <button id="connect-btn">Connect</button>
+    <button id="disconnect-btn" disabled>Disconnect</button>
+    <div>
+      <h3>Messages:</h3>
+      <div
+        id="messages"
+        style="
+          border: 1px solid #ccc;
+          padding: 10px;
+          height: 200px;
+          overflow: auto;
+        "
+      ></div>
+    </div>
+
+    <script src="websocket-test.js"></script>
+  </body>
+</html>

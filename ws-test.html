@@ -2,6 +2,23 @@
 <html>
   <head>
     <title>WebSocket Test Tool</title>
+    <style>
+      #ws-url {
+        width: 400px; /* Increased width */
+        padding: 5px;
+      }
+      #connect-btn,
+      #disconnect-btn {
+        padding: 5px 10px;
+      }
+      #messages {
+        border: 1px solid #ccc;
+        padding: 10px;
+        height: 200px;
+        overflow: auto;
+        margin-top: 10px;
+      }
+    </style>
   </head>
   <body>
     <h2>WebSocket Test Tool</h2>
@@ -10,15 +27,7 @@
     <button id="disconnect-btn" disabled>Disconnect</button>
     <div>
       <h3>Messages:</h3>
-      <div
-        id="messages"
-        style="
-          border: 1px solid #ccc;
-          padding: 10px;
-          height: 200px;
-          overflow: auto;
-        "
-      ></div>
+      <div id="messages"></div>
     </div>
 
     <script src="websocket-test.js"></script>
